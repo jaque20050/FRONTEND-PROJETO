@@ -108,3 +108,82 @@ html {
   color: white;
 }
 /* CABEÇALHO */
+
+/*PAINEL */
+
+.conteudo-principal .paineis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  position: relative;
+}
+.conteudo-principal .paineis .imagem-painel {
+  /* Não repita a imagem */
+  background-repeat: no-repeat;
+
+  /* Tamanho do background, ira cobrir todo o tamanho da div*/
+  background-size: cover;
+
+  /* Ira ficar centralizado */
+  background-position: center;
+
+  /* Lagura minima */
+  min-width: 100%;
+
+  /* Altura */
+  height: 100%;
+
+  /* Posicionar dentro do painel pai  */
+  position: absolute;
+
+  /* Sobreposição da imagem, eixo de profundidade */
+  z-index: -1;
+
+  /* Porcetagem de escuro na imagem */
+  filter: brightness(70%);
+}
+
+.conteudo-principal .paineis .projeto1 {
+  background-image: url("../imagens/painel1.jpg");
+}
+
+.conteudo-principal .paineis .projeto2 {
+  background-image: url("../imagens/painel2.jpg");
+}
+
+.conteudo-principal .paineis .projeto3 {
+  background-image: url("../imagens/painel3.jpg");
+}
+
+.conteudo-principal .paineis .titulo {
+  color: #fff;
+  text-transform: uppercase;
+
+  /* Responsividade de titulo */
+  font-size: calc(1em + 1vw);
+}
+
+.conteudo-principal .paineis .seta {
+  background-image: url("../imagens/seta.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  text-indent: 100%;
+  overflow: hidden;
+}
+
+.conteudo-principal .paineis .seta.btn-voltar {
+  left: 20px;
+
+  /* Rotacionando imagem */
+  transform: rotateY(180deg);
+}
+
+.conteudo-principal .paineis .seta.btn-avancar {
+  right: 20px;
+}
+/*PAINEL */
