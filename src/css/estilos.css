@@ -3,3 +3,36 @@
 body {
   font-family: "Public Sans", sans-serif;
 }
+
+/* O asteristico serve para estilizar todos
+    os elementos HTML da página 
+    
+    Vamos zerar a margin e o padding
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #000;
+}
+
+img {
+  /* Todas as imagens terá uma largura de 100% */
+  max-width: 100%;
+}
+
+a {
+  /* Não irá colocar ___ em todas as linhas */
+  text-decoration: none;
+}
+
+ul {
+  /* Tira os ponto de listagem  */
+  list-style: none;
+}
+
+html {
+  /* Animação mais suave ao clicar */
+  scroll-behavior: smooth;
+}
