@@ -36,3 +36,33 @@ html {
   /* Animação mais suave ao clicar */
   scroll-behavior: smooth;
 }
+
+/* CABEÇALHO */
+
+.cabecalho .logo .imagem {
+  width: 100px;
+}
+
+.cabecalho {
+  /* Torna o elemento um flex container automaticamente 
+  transformando todos os seus filhos diretos em flex itens. */
+  display: flex;
+
+  /* Espaçamento  entre os elementos */
+  justify-content: space-between;
+
+  /* Alinhar ao centro */
+  align-items: center;
+
+  /* Padding de 25 para cima e para baixo e 
+  0 para esquerda e direita */
+  padding: 25px 0;
+
+  max-width: 1170px;
+
+  margin: 0 auto;
+ 
+  /* Quando não tiver mais espaço, quebre para baixo */
+  flex-wrap: wrap;
+}
+/* CABEÇALHO */
