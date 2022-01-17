@@ -37,11 +37,39 @@ html {
   scroll-behavior: smooth;
 }
 
-/* CABEÇALHO */
+/* Logo */
 
 .logo .imagem {
   width: 100px;
 }
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  /* Tranformando o texto em caixa alta */
+  text-transform: uppercase;
+}
+
+.logo .titulo {
+  margin-left: 7px;
+  font-size: 17px;
+
+  /* Transição mais suave de cor */
+  transition: 0.3s ease-in-out;
+
+  /* Peso de fonte */
+  font-weight: 800;
+}
+
+.logo .titulo:hover {
+  /* Troca de cor do Titulo */
+  color: #1ed760;
+}
+
+/* Logo */
+
+/* CABEÇALHO */
 
 .cabecalho {
   /* Torna o elemento um flex container automaticamente 
@@ -66,28 +94,18 @@ html {
   flex-wrap: wrap;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
+@media (max-width: 624px) {
+  .cabecalho {
+    justify-content: center;
+  }
 
-  /* Tranformando o texto em caixa alta */
-  text-transform: uppercase;
-}
+  .cabecalho .logo {
+    margin-bottom: 30px;
+  }
 
-.logo .titulo {
-  margin-left: 7px;
-  font-size: 17px;
-
-  /* Transição mais suave de cor */
-  transition: 0.3s ease-in-out;
-
-  /* Peso de fonte */
-  font-weight: 800;
-}
-
-.cabecalho .titulo:hover {
-  /* Troca de cor do Titulo */
-  color: #1ed760;
+  .cabecalho .menu .imagem a {
+    font-size: calc(0.6em + 1vw);
+  }
 }
 
 .cabecalho .navegacao .menu {
@@ -117,6 +135,12 @@ html {
   align-items: center;
   height: 700px;
   position: relative;
+}
+
+@media (max-width: 900px) {
+  .conteudo-principal .paineis {
+    height: 500px;
+  }
 }
 .conteudo-principal .paineis .imagem-painel {
   /* Não repita a imagem */
@@ -221,6 +245,22 @@ html {
   font-weight: 400;
 }
 
+@media (max-width: 1200px) {
+  .quem-somos .conteudo {
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 30px;
+  }
+
+  .quem-somos .conteudo .imagem {
+    display: none;
+  }
+
+  .quem-somos .conteudo .informacoes {
+    width: 100px;
+  }
+}
+
 /* QUEM SOMOS */
 
 /* RODAPÉ */
@@ -228,7 +268,6 @@ html {
 .rodape {
   padding: 80px 0 20px 0;
 }
-
 .rodape .navegacao {
   max-width: 1170px;
   margin: 0 auto;
@@ -259,7 +298,28 @@ html {
 }
 
 .rodape .navegacao .logo .imagem {
-  width: 50px;
+  width: 100px;
+}
+
+.rodape .copyright {
+  margin-top: 70px;
+  text-align: center;
+}
+
+@media (max-width: 940px) {
+  .rodape .navegacao {
+    justify-content: center;
+  }
+
+  .rodape .navegacao.logo {
+    margin-bottom: 30px;
+  }
+
+  .rodape .navegacao .logo,
+  .rodape .navegacao .redes-sociais {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 /* RODAPÉ */
