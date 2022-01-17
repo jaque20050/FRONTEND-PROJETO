@@ -7,5 +7,6 @@ A imagem atual começa com 0, adicionar contador
  */
 
 //const imagens = document
+//
 
 console.log(document);
