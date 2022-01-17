@@ -61,8 +61,21 @@ html {
   max-width: 1170px;
 
   margin: 0 auto;
- 
+
   /* Quando não tiver mais espaço, quebre para baixo */
   flex-wrap: wrap;
+}
+
+.cabecalho .logo {
+  display: flex;
+  align-items: center;
+
+  /* Tranformando o texto em caixa alta */
+  text-transform: uppercase;
+}
+
+.cabecalho .titulo {
+  margin-left: 7px;
+  font-size: 17px;
 }
 /* CABEÇALHO */
