@@ -6,7 +6,7 @@ A imagem atual começa com 0, adicionar contador
 
  */
 
-//const imagens = document
-//
-
-console.log(document);
+const imagens = document.querySelectorAll('.imagem-painel');
+const setaAvancar = document.getElementById('btn-avancar');
+const setaVoltar = document.getElementById('btn-voltar');
+let imagemAtual = 0;
